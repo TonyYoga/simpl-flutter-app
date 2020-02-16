@@ -22,6 +22,7 @@ class _HomeState extends State<Home> {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
+            backgroundColor: Colors.pink[800],
             title: Center(child: Text('App title')),
             elevation: 0,
           ),
@@ -49,23 +50,42 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
-                Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 23,
                   ),
                 ),
-                SizedBox(height: 10,),
+                SizedBox(
+                  height: 10,
+                ),
                 FlatButton(
-                    color: Colors.grey,
+                    color: Colors.pink[800],
                     onPressed: () {
-                        print('close app');
+                      print('close app');
 //                        SystemNavigator.pop();
                     },
-                    child: Text('CLOSE APP',
-                      style: TextStyle(
-                          fontSize: 20.0
-                      ),))
+                    child: Text(
+                      'CLOSE APP',
+                      style: TextStyle(color: Colors.white, fontSize: 20.0),
+                    )
+                ),
+                Container(
+                  height: 35,
+                  child: Center(
+                    child: Image(image: AssetImage('assets/healthlogo.png')),
+                  ),
+
+                ),
+                Text(
+                  'Powered by Dart Weider',
+                  textAlign: TextAlign.center,
+                  style:
+                  TextStyle(fontSize: 10, color: Colors.grey[700]),
+                )
               ],
             ),
           ),
