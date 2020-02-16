@@ -15,10 +15,10 @@ class _SignUpState extends State<SignUp> {
           padding: EdgeInsets.all(10),
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage('assets/wallpaper_signup.jpeg'),
+                  image: AssetImage('assets/girlwithphone.jpg'),
                   fit: BoxFit.cover,
                   colorFilter:
-                      ColorFilter.mode(Colors.grey[850], BlendMode.darken))),
+                      ColorFilter.mode(Colors.grey[500], BlendMode.darken))),
           child: Padding(
             padding: const EdgeInsets.fromLTRB(25.0, 5, 25, 0),
             child: Column(
@@ -35,10 +35,11 @@ class _SignUpState extends State<SignUp> {
                   child: Container(
                     child: Center(
                       child: Text(
-                        'Some text',
+                        'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.',
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 25,
+                          fontSize: 20,
                           letterSpacing: 2,
                         ),
                       ),
